@@ -131,4 +131,50 @@ arr=np.arange(9).reshape(3,3)
 print("\n",arr[:,[1,0,2]])
 
 
+            # Q. Reverse the rows of a 2D array arr.
+
+arr = np.arange(9).reshape(3,3)
+print("\n",arr)
+print(arr[::-1,:])
+
+            # Q. Reverse the columns of a 2D np.array arr.
+
+arr=np.arange(9).reshape(3,3)
+print("\n",arr)
+print(arr[:,::-1])
+
+            # Q. Create a 2D array of shape 5x3 to contain random decimal numbers between 5 and 10.
+
+import random
+arr= np.random.uniform(5,10,(5,3))
+print("\n",arr)
+
+
+            # Q. Print or show only 3 decimal places of the numpy np.array rand_arr.
+
+rand_arr=np.random.random((5,3))
+np.set_printoptions(precision=3)
+print("\n",rand_arr)
+
+            # Q. Pretty print rand_arr by suppressing the scientific notation (like 1e10)
+
+np.random.seed(100)
+rand_arr=np.random.random([3,3])/1e3
+np.set_printoptions(suppress=True, precision=6)
+print("\n",rand_arr)
+
+            # Q. Limit the number of items printed in python numpy array a to a maximum of 6 elements.
+
+arr=np.arange(15)
+np.set_printoptions(threshold=6)
+print("\n",arr)
+
+            # Q. Print the full numpy array a without truncating.
+
+arr=np.arange(15)
+np.set_printoptions(threshold=np.inf)
+print("\n",arr)
+
+
+
 
