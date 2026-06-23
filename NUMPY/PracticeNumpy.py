@@ -122,5 +122,13 @@ maxx(1,5)
 pair_maxx=np.vectorize(maxx,otypes=[float])
 a = np.array([5, 7, 9, 8, 6, 4, 5])
 b = np.array([6, 3, 4, 8, 9, 7, 1])
-
 print("\n",pair_maxx(a,b))
+
+# Q. Swap columns 1 and 2 in the array arr.
+# arr = np.arange(9).reshape(3,3) arr
+
+arr=np.arange(9).reshape(3,3)
+print("\n",arr[:,[1,0,2]])
+
+
+
